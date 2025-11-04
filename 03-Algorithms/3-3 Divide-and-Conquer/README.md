@@ -92,11 +92,11 @@ print(quick_sort(arr))  # [1,2,3,4,5]
 
 ```mermaid
 graph TD
-    A[5,3,2,4,1] --> B[Pivot=5, less=[3,2,4], greater=[ ]]
-    B --> C[Quick sort less=[3,2,4]]
-    C --> D[Pivot=3, less=[2], greater=[4]]
-    D --> E[Sort less=[2]]
-    D --> F[Sort greater=[4]]
+    A[5,3,2,4,1] --> B[Pivot=5, less=3,2,4, greater= ]
+    B --> C[Quick sort less=3,2,4]
+    C --> D[Pivot=3, less=2, greater=4]
+    D --> E[Sort less=2]
+    D --> F[Sort greater=4]
     E --> G[Combine: 2,3,4]
     G --> H[Combine: 2,3,4,5]
 ```
@@ -122,33 +122,7 @@ arr = [5,3,2,4,1]
 print(max_divide_conquer(arr))  # 5
 ```
 
-**Mermaid minh họa Tìm Maximum**
 
-```mermaid
-graph TD
-    A[5,3,2,4,1] --> B[5,3,2]
-    A --> C[4,1]
-    B --> D[5]
-    B --> E[3,2]
-    E --> F[3]
-    E --> G[2]
-    C --> H[4]
-    C --> I[1]
-    D --> J[5]
-    F --> K[3]
-    G --> L[2]
-    H --> M[4]
-    I --> N[1]
-    J --> O[5]
-    K --> P[3]
-    L --> Q[2]
-    M --> R[4]
-    N --> S[1]
-    O --> T[Compare max(5,3)=5]
-    T --> U[Compare max(5,2)=5]
-    U --> V[Compare max(5,4)=5]
-    V --> W[Compare max(5,1)=5]
-```
 
 ---
 
