@@ -86,8 +86,8 @@ graph TD
 
 ```mermaid
 graph TD
-    A[2] -->|9-2=7| B[Kiểm tra 7 có trong dict?] --> C[Chưa có, thêm 2]
-    D[7] -->|9-7=2| E[Kiểm tra 2 có trong dict?] --> F[Có, in ra cặp (2,7)]
+    A[2] -->|9-2=7| B[Kiểm tra 7 có trong dict] --> C[Chưa có, thêm 2]
+    D[7] -->|9-7=2| E[Kiểm tra 2 có trong dict] --> F[Có, in ra cặp 2,7]
 ```
 
 ---
